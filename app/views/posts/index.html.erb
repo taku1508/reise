@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TECH </title>
+    <meta name="description" content="This site is a test site.">
+    <link rel="icon" href="assets/favicon.png">
+    <link rel="stylesheet" href="stylesheets/loader.css">
+    <script src="javascripts/vendors/pace.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Kameron:400,700|Noto+Sans+JP&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="stylesheets/vendors/bootstrap-reboot.css" />
+    <link rel="stylesheet" href="stylesheets/vendors/swiper.min.css" />
+    <link rel="stylesheet" href="stylesheets/style.css" />
+  </head>
+  <body>
+    <div id="global-container">
+      <div id="container">
+        <div class="mobile-menu__cover"></div>
+        <div class="nav-trigger"></div>
+        <header class="header">
+          <div class="header__inner appear up">
+            <div class="logo item">
+              <img src="assets/logo.svg" alt="" class="logo__img" />
+              <span class="logo__stay">TECH</span>
+              <span class="logo__world">FASHION</span>
+            </div>
+            <nav class="header__nav">
+              <ul class="header__ul">
+                <%= link_to "投稿", new_post_path, class: "header__li item" %>
+                <li class="header__li item"><a href="#">投稿</a></li>
+                <li class="header__li item"><a href="#">Help</a></li>
+                <li class="header__li item"><a href="#">Cart</a></li>
+                <li class="header__li item">
+                  <a class="letter-spacing" href="#">My account</a>
+                </li>
+              </ul>
+            </nav>
+            <button class="mobile-menu__btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </header>
+        <div id="content">
+          <div class="hero">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="hero__title">Enjoy</div>
+                  <img src="assets/image-50.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <div class="hero__title">Fantastic</div>
+                  <img src="assets/image-13.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <div class="hero__title">Beautiful</div>
+                  <img src="assets/image-38.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <div class="hero__title">Experience</div>
+                  <img src="assets/image-47.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <div class="hero__title">Love</div>
+                  <img src="assets/image-66.jpg" alt="" />
+                </div>
+              </div>
+              <div class="hero__footer">
+                <img class="hero__downarrow" src="assets/arrow.svg" />
+                <span class="hero__scrolltext">scroll</span>
+              </div>
+            </div>
+          </div>
+          <div id="main-content">
+            <aside class="side left">
+              <div class="side__inner">
+                <a class="twitter icon tween-animate-title" href="#">Twitter</a>
+                <a class="fb icon tween-animate-title" href="#">Facebook</a>
+              </div>
+            </aside>
+            <main>
+              <section class="travel">
+                <div class="travel__inner">
+                  <div class="travel__img cover-slide">
+                    <img
+                      class="img-zoom"
+                      src="assets/image-37.jpg"
+                      alt=""
+                  　 />
+                  </div>
+                  <div class="travel__texts appear left">
+                    <div class="travel__texts-inner">
+                      <div class="travel__title main-title item">
+                        <span class="purple">FASHION</span>
+                        <span>The World</span>
+                      </div>
+                      <div class="travel__sub sub-title item">オシャレして世界中を旅しよう</div>
+                      <div class="travel__description item">
+                        <p>
+                          世界１５０ヶ国で<br/>利用できる通販サービスです。
+                        </p>
+                        <p>あなたの望む服がきっと見つかります。</p>
+                      </div>
+                      <div class="travel__btn item">
+                        <button class="btn slide-bg item">もっと詳しく</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="houses">
+                <div>
+                  <h2 class="main-title tween-animate-title">NEW</h2>
+                  <p class="sub-title tween-animate-title">life is beautiful</p>
+                </div>
+                <div class="houses__inner">
+                  <div class="houses__item">
+                    <div class="cover-slide hover-darken">
+                      <div
+                        class="bg-img-zoom img-bg50"
+                        style="background-image: url(assets/image-55.jpg)"
+                      ></div>
+                    </div>
+                    <p class="houses__title">MENS</p>
+                  </div>
+                  <div class="houses__item">
+                    <div class="cover-slide hover-darken">
+                      <div
+                        class="bg-img-zoom img-bg50"
+                        style="background-image: url(assets/image-57.jpg)"
+                      ></div>
+                    </div>
+                    <p class="houses__title">WOMEN</p>
+                  </div>
+                  <div class="houses__item">
+                    <div class="cover-slide hover-darken">
+                      <div
+                        class="bg-img-zoom img-bg50"
+                        style="background-image: url(assets/image-64.jpg)"
+                      ></div>
+                    </div>
+                    <p class="houses__title">DRESS</p>
+                  </div>
+                  <div class="houses__item">
+                    <div class="cover-slide hover-darken">
+                      <div
+                        class="bg-img-zoom img-bg50"
+                        style="background-image: url(assets/image-45.jpg)"
+                      ></div>
+                    </div>
+                    <p class="houses__title">FORMAL</p>
+                  </div>
+                  <div class="houses__item">
+                    <div class="cover-slide hover-darken">
+                      <div
+                        class="bg-img-zoom img-bg50"
+                        style="background-image: url(assets/image-62.jpg)"
+                      ></div>
+                    </div>
+                    <p class="houses__title">S/S2020</p>
+                  </div>
+                  <div class="houses__item">
+                    <div class="cover-slide hover-darken">
+                      <div
+                        class="bg-img-zoom img-bg50"
+                        style="background-image: url(assets/image-40.jpg)"
+                      ></div>
+                    </div>
+                    <p class="houses__title">Resort fashion</p>
+                  </div>
+                  <div class="houses__btn appear up">
+                    <button class="btn cover-3d item">VIEW</button>
+                  </div>
+                </div>
+              </section>
+              <section class="popular">
+                <div class="popular__header">
+                  <h2 class="main-title tween-animate-title">S/S 2020</h2>
+                  <p class="sub-title tween-animate-title">カテゴリー</p>
+                </div>
+                <div class="popular__inner appear up">
+                  <div class="popular__container">
+                    <div class="popular__item item">
+                      <div class="popular__img">
+                        <img src="assets/image-41.jpg" alt="" />
+                      </div>
+                      <div class="popular__title">コレクション</div>
+                    </div>
+                    <div class="popular__item item">
+                      <div class="popular__img">
+                        <img src="assets/image-39.jpg" alt="" />
+                      </div>
+                      <div class="popular__title">今週の新商品</div>
+                    </div>
+                    <div class="popular__item item">
+                      <div class="popular__img">
+                        <img src="assets/image-63.jpg" alt="" />
+                      </div>
+                      <div class="popular__title">メンズ＆ウィメンズ</div>
+                    </div>
+                    <div class="popular__item item">
+                      <div class="popular__img">
+                        <img src="assets/image-65.jpg" alt="" />
+                      </div>
+                      <div class="popular__title">アクセサリー</div>
+                    </div>
+                    <div class="popular__btn appear up">
+                      <button class="btn cover-3d item">VIEW</button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </main>
+            <aside class="side right">
+              <div class="side__inner">
+                <span class="tween-animate-title">&copy;TECH　FASHION</span>
+              </div>
+            </aside>
+          </div>
+        </div>
+        <footer class="footer appear up">
+          <div class="logo item">
+            <img src="assets/logo.svg" alt="" class="logo__img" />
+            <span class="logo__stay">TECH</span>
+            <span class="logo__world">FASHION</span>
+          </div>
+          <nav class="footer__nav">
+            <ul class="footer__ul">
+              <li class="footer__li item"><a href="#">Service</a></li>
+              <li class="footer__li item"><a href="#">Contact</a></li>
+              <li class="footer__li item"><a href="#">Company</a></li>
+              <li class="footer__li item"><a href="#">Sitemap</a></li>
+            </ul>
+            <div class="footer__copyright item">
+              &copy; TECH FASHION
+            </div>
+          </nav>
+        </footer>
+      </div>
+      <nav class="mobile-menu">
+        <div class="logo">
+          <img src="assets/logo.svg" alt="" class="logo__img" />
+          <span class="logo__stay">TECH</span>
+          <span class="logo__world">FASHION</span>
+        </div>
+        <ul class="mobile-menu__main">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#">
+              <span class="main-title">My Account</span>
+              <span class="sub-title">サインイン・アウトします</span>
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#">
+              <span class="main-title">Cart</span>
+              <span class="sub-title">カート内の商品を確認</span>
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#">
+              <span class="main-title">Help</span>
+              <span class="sub-title">お問い合わせなど</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <script src="javascripts/vendors/swiper.min.js"></script>
+    <script src="javascripts/vendors/TweenMax.min.js"></script>
+    <script src="javascripts/vendors/scroll-polyfill.js"></script>
+    <script src="javascripts/libs/scroll.js"></script>
+    <script src="javascripts/libs/text-animation.js"></script>
+    <script src="javascripts/libs/hero-slider.js"></script>
+    <script src="javascripts/libs/mobile-menu.js"></script>
+    <script src="javascripts/main.js"></script>
+  </body>
+</html>
