@@ -5,11 +5,11 @@ class PostsController < ApplicationController
 
   
   def index
-    # @posts = Post.all
+    @posts = Post.all
   end
 
   def show
-    @comment = Comment.new
+    # @comment = Comment.new
   end
 
   def new
@@ -65,7 +65,6 @@ class PostsController < ApplicationController
 
 
   def post_params
-    params.require(:post).permit(:title, :body, :image, :name).merge(user_id: current_user.id)
+    params.require(:post).permit(:title, :body, :image)
   end
-
 end

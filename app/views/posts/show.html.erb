@@ -1,2 +1,33 @@
-<h1>Item#show</h1>
-<p>Find me in app/views/item/show.html.erb</p>
+<%= render partial: "header" %>
+
+<div class ="container">
+    <%# <div class="col-md-12 card margin-top-5per  margin-bottom-5per book-block"> %>
+      <%= image_tag @post.image.url, class: 'post-image' %>     
+        <h3 class = "text-center"><%= @post.title%></h3>
+          <div class = "padding-bottom-15">
+            <div class = "time-like">
+
+            <div id="likes_buttons_<%= @post.id %>">
+</div>
+          <div class = "created_at"> <%= @post.created_at.strftime('%Y/%m/%d')%>
+
+            </div>
+  
+
+                      
+
+              </div>
+              <div class= "text-center title"><%= @post.body%></div> 
+
+              <div class = "edit-delete">
+                  <%= link_to "編集", edit_post_path(@post) , style: 'color: lightgrey; text-decoration :none; font-size: 30px;'%>
+
+                  <%= link_to "オナニー",post_path(@post), method: :delete, data: {confirm: '削除しますか？'}, style: 'color: lightgrey; text-decoration :none; font-size: 30px;'%>
+
+              </div>
+
+          </div>
+        </div>
+
+    <%# </div>   %>
+  </div>
