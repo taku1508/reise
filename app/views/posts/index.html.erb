@@ -4,15 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>TECH </title>
+    <title>REISE </title>
     <meta name="description" content="This site is a test site.">
-    <link rel="icon" href="assets/favicon.png">
-    <link rel="stylesheet" href="stylesheets/loader.css">
-    <script src="javascripts/vendors/pace.js"></script>
-    <link
-      href="https://fonts.googleapis.com/css?family=Kameron:400,700|Noto+Sans+JP&display=swap"
-      rel="stylesheet"
-    />
+    <%# <link rel="stylesheet" href="stylesheets/loader.css"> %>
+    <%# <script src="javascripts/vendors/pace.js"></script> %>
     <link rel="stylesheet" href="stylesheets/vendors/bootstrap-reboot.css" />
     <link rel="stylesheet" href="stylesheets/vendors/swiper.min.css" />
     <link rel="stylesheet" href="stylesheets/style.css" />
@@ -25,9 +20,8 @@
         <header class="header">
           <div class="header__inner appear up">
             <div class="logo item">
-              <img src="assets/logo.svg" alt="" class="logo__img" />
-              <span class="logo__stay">TECH</span>
-              <span class="logo__world">FASHION</span>
+              <span class="logo__stay">RE</span>
+              <span class="logo__world">ISE</span>
             </div>
             <nav class="header__nav">
               <ul class="header__ul">
@@ -47,68 +41,7 @@
             </button>
           </div>
         </header>
-        <div id="content">
-          <div class="hero">
-            <div class="swiper-container">
-              <div class="swiper-wrapper">
-              <% @posts.each do |post| %>
-              <%= link_to post %>
-
-                <div class="swiper-slide">
-                <%= image_tag post.image.url, class:"hero__title", alt: "" %>
-                </div>
-
-                <% end %>
-              </div>
-              <div class="hero__footer">
-                <img class="hero__downarrow" src="assets/arrow.svg" />
-                <span class="hero__scrolltext">scroll</span>
-              </div>
-            </div>
-          </div>
-          <div id="main-content">
-            <aside class="side left">
-              <div class="side__inner">
-                <a class="twitter icon tween-animate-title" href="#">Twitter</a>
-                <a class="fb icon tween-animate-title" href="#">Facebook</a>
-              </div>
-            </aside>
-            <main>
-              <section class="travel">
-                <div class="travel__inner">
-                  <div class="travel__img cover-slide">
-                    <img
-                      class="img-zoom"
-                      src="assets/image-37.jpg"
-                      alt=""
-                  　 />
-                  </div>
-                  <div class="travel__texts appear left">
-                    <div class="travel__texts-inner">
-                      <div class="travel__title main-title item">
-                        <span class="purple">FASHION</span>
-                        <span>The World</span>
-                      </div>
-                      <div class="travel__sub sub-title item">オシャレして世界中を旅しよう</div>
-                      <div class="travel__description item">
-                        <p>
-                          世界１５０ヶ国で<br/>利用できる通販サービスです。
-                        </p>
-                        <p>あなたの望む服がきっと見つかります。</p>
-                      </div>
-                      <div class="travel__btn item">
-                        <button class="btn slide-bg item">もっと詳しく</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-              <section class="houses">
-                <div>
-                  <h2 class="main-title tween-animate-title">NEW</h2>
-                  <p class="sub-title tween-animate-title">life is beautiful</p>
-                </div>
-                <div class="houses__inner">
+                  <div class="houses__inner">
                   <div class="houses__item">
                     <div class="cover-slide hover-darken">
                       <div
@@ -158,10 +91,10 @@
                     <div class="cover-slide hover-darken">
                       <div
                         class="bg-img-zoom img-bg50"
-                        style="background-image: url(assets/image-40.jpg)"
+                        style="background-image: url(assets/image-64.jpg)"
                       ></div>
                     </div>
-                    <p class="houses__title">Resort fashion</p>
+                    <p class="houses__title">DRESS</p>
                   </div>
                   <div class="houses__btn appear up">
                     <button class="btn cover-3d item">VIEW</button>
@@ -208,16 +141,15 @@
             </main>
             <aside class="side right">
               <div class="side__inner">
-                <span class="tween-animate-title">&copy;TECH　FASHION</span>
+                <span class="tween-animate-title">&copy;REISE</span>
               </div>
             </aside>
           </div>
         </div>
         <footer class="footer appear up">
           <div class="logo item">
-            <img src="assets/logo.svg" alt="" class="logo__img" />
-            <span class="logo__stay">TECH</span>
-            <span class="logo__world">FASHION</span>
+            <span class="logo__stay">RE</span>
+            <span class="logo__world">ISE</span>
           </div>
           <nav class="footer__nav">
             <ul class="footer__ul">
@@ -227,16 +159,15 @@
               <li class="footer__li item"><a href="#">Sitemap</a></li>
             </ul>
             <div class="footer__copyright item">
-              &copy; TECH FASHION
+              &copy; REISE
             </div>
           </nav>
         </footer>
       </div>
       <nav class="mobile-menu">
         <div class="logo">
-          <img src="assets/logo.svg" alt="" class="logo__img" />
-          <span class="logo__stay">TECH</span>
-          <span class="logo__world">FASHION</span>
+          <span class="logo__stay">RE</span>
+          <span class="logo__world">ISE</span>
         </div>
         <ul class="mobile-menu__main">
           <li class="mobile-menu__item">
@@ -260,13 +191,5 @@
         </ul>
       </nav>
     </div>
-    <script src="javascripts/vendors/swiper.min.js"></script>
-    <script src="javascripts/vendors/TweenMax.min.js"></script>
-    <script src="javascripts/vendors/scroll-polyfill.js"></script>
-    <script src="javascripts/libs/scroll.js"></script>
-    <script src="javascripts/libs/text-animation.js"></script>
-    <script src="javascripts/libs/hero-slider.js"></script>
-    <script src="javascripts/libs/mobile-menu.js"></script>
-    <script src="javascripts/main.js"></script>
   </body>
 </html>
