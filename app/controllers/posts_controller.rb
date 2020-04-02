@@ -6,6 +6,7 @@ class PostsController < ApplicationController
   
   def index
     @posts = Post.order("RAND()").limit(8)
+    @user = current_user
   end
 
   def show
