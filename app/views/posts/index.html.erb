@@ -108,33 +108,21 @@
                 </div>
                 <div class="popular__inner appear up">
                   <div class="popular__container">
+
+                    <% @posts.each do |post| %>
+                    
                     <div class="popular__item item">
+                    <%= link_to post do%>
                       <div class="popular__img">
-                        <img src="assets/image-41.jpg" alt="" />
+                      
+                    <%= image_tag post.image.url, alt:"" %>
+                      
                       </div>
-                      <div class="popular__title">コレクション</div>
+                      <% end %>
+                      <div class="popular__title"><%= post.title %></div>
                     </div>
-                    <div class="popular__item item">
-                      <div class="popular__img">
-                        <img src="assets/image-39.jpg" alt="" />
-                      </div>
-                      <div class="popular__title">今週の新商品</div>
-                    </div>
-                    <div class="popular__item item">
-                      <div class="popular__img">
-                        <img src="assets/image-63.jpg" alt="" />
-                      </div>
-                      <div class="popular__title">メンズ＆ウィメンズ</div>
-                    </div>
-                    <div class="popular__item item">
-                      <div class="popular__img">
-                        <img src="assets/image-65.jpg" alt="" />
-                      </div>
-                      <div class="popular__title">アクセサリー</div>
-                    </div>
-                    <div class="popular__btn appear up">
-                      <button class="btn cover-3d item">VIEW</button>
-                    </div>
+                     <% end %>
+
                   </div>
                 </div>
               </section>

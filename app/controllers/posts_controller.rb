@@ -5,7 +5,7 @@ class PostsController < ApplicationController
 
   
   def index
-    @posts = Post.all
+    @posts = Post.order("RAND()").limit(8)
   end
 
   def show
