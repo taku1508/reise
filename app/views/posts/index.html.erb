@@ -25,13 +25,12 @@
             </div>
             <nav class="header__nav">
               <ul class="header__ul">
-                <%= link_to "投稿", new_post_path, class: "header__li item" %>
-                <li class="header__li item"><a href="#">投稿</a></li>
-                <li class="header__li item"><a href="#">Help</a></li>
-                <li class="header__li item"><a href="#">Cart</a></li>
-                <li class="header__li item">
-                  <a class="letter-spacing" href="#">My account</a>
-                </li>
+                <%= link_to "Post", new_post_path, class: "header__li item" %>
+                <%= link_to "LogIn", new_post_path, class: "header__li item" %>
+                <%= link_to "LogOut", new_post_path, class: "header__li item" %>
+                <%= link_to "Sign Up", new_post_path, class: "header__li item" %>
+                <%= link_to "Like", new_post_path, class: "header__li item" %>
+                <%= link_to "My Account", new_post_path, class: "header__li item" %>
               </ul>
             </nav>
             <button class="mobile-menu__btn">
@@ -91,10 +90,10 @@
                     <div class="cover-slide hover-darken">
                       <div
                         class="bg-img-zoom img-bg50"
-                        style="background-image: url(assets/image-64.jpg)"
+                        style="background-image: url(assets/image-50.jpg)"
                       ></div>
                     </div>
-                    <p class="houses__title">DRESS</p>
+                    <p class="houses__title">S/S2020</p>
                   </div>
                   <div class="houses__btn appear up">
                     <button class="btn cover-3d item">VIEW</button>
@@ -121,7 +120,7 @@
                       <% end %>
                       <div class="popular__title"><%= post.title %></div>
                     </div>
-                     <% end %>
+                    <% end %>
 
                   </div>
                 </div>
