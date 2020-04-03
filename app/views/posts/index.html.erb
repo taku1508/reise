@@ -13,33 +13,7 @@
     <link rel="stylesheet" href="stylesheets/style.css" />
   </head>
   <body>
-    <div id="global-container">
-      <div id="container">
-        <div class="mobile-menu__cover"></div>
-        <div class="nav-trigger"></div>
-        <header class="header">
-          <div class="header__inner appear up">
-            <div class="logo item">
-              <span class="logo__stay">RE</span>
-              <span class="logo__world">ISE</span>
-            </div>
-            <nav class="header__nav">
-              <ul class="header__ul">
-                <%= link_to "Post", new_post_path, class: "header__li item" %>
-                <%= link_to "LogIn", new_post_path, class: "header__li item" %>
-                <%= link_to "LogOut", new_post_path, class: "header__li item" %>
-                <%= link_to "Sign Up", new_post_path, class: "header__li item" %>
-                <%= link_to "Like", new_post_path, class: "header__li item" %>
-                <%= link_to "My Account", new_post_path, class: "header__li item" %>
-              </ul>
-            </nav>
-            <button class="mobile-menu__btn">
-              <span></span>
-              <span></span>
-              <span></span>
-            </button>
-          </div>
-        </header>
+    <%= render partial: "header" %>
                   <div class="houses__inner">
                   <div class="houses__item">
                     <div class="cover-slide hover-darken">
