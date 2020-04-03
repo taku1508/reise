@@ -11,9 +11,10 @@
             <nav class="header__nav">
               <ul class="header__ul">
                 <% if user_signed_in? %>
-                <li>
-                <%= @user.nickname %>
-                </li> 
+
+                <%= link_to user_path(current_user), class: "header__li item" do%>
+                <%= @user.nickname%>
+                <% end %>
                 <%= link_to "投稿", new_post_path, class: "header__li item" %>
                 <%= link_to "ログアウト", destroy_user_session_path, method: :delete , class: "header__li item"%>
                   <% else %>
