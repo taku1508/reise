@@ -18,9 +18,9 @@
               <div class= "text-center title"><%= @post.body%></div> 
 
               <div class = "edit-delete">
-                  <%= link_to "編集", edit_post_path(@post) , style: 'color: lightgrey; text-decoration :none; font-size: 30px; padding-right: 30px;'%>
+                  <%= link_to "Edit", edit_post_path(@post) , style: 'color: lightgrey; text-decoration :none; font-size: 30px; padding-right: 30px;'%>
 
-                  <%= link_to "削除",post_path(@post), method: :delete, data: {confirm: '削除しますか？'}, style: 'color: lightgrey; text-decoration :none; font-size: 30px;'%>
+                  <%= link_to "Delete",post_path(@post), method: :delete, data: {confirm: '削除しますか？'}, style: 'color: lightgrey; text-decoration :none; font-size: 30px;'%>
 
               </div>
 

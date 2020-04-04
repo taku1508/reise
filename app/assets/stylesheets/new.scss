@@ -16,21 +16,30 @@
   }
 }
 .file-select{
-  
 }
 .form-control{
   box-sizing: content-box;
   margin-left: 50px;
   width: 350px;
   height: 50px;
+  border-radius: 10px;
 }
 
 .form-control-text{
   box-sizing: content-box;
   width: 450px;
   height: 300px;
+  border-radius: 10px;
 }
+
 .send-btn{
   box-sizing: content-box;
 
+}
+
+.send-btn{
+width: 120px;
+height: 45px;
+text-align: round;
+border-radius: 10px;
 }

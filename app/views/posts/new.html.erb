@@ -6,16 +6,23 @@
             <%= f.label :title %>
             <%= f.text_field :title , placeholder: 'type a title', class:'form-control' %>
           </div>
+          
+          
             <div class="form-group form-group-file">
-              <%= f.label :image, style:"cursor: pointer;" do%>
+
+              <%= f.label :image do%>
                 <i class="far fa-file-image"></i>
                 <%= f.file_field :image ,class: "file-select"%>
             <% end %>
             </div>
+
               <div class="form-group" >
                 <%= f.text_area :body, placeholder: "text" , rows: "3", class:'form-control-text' %>
               </div>
-                <%= f.submit "post", class: 'send-btn'%>
+
+              <div class="form-group" >
+                <%= f.submit "Post", class: 'send-btn'%>
+                </div>
             <% end %>
 </div>
 

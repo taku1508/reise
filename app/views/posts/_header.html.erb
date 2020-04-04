@@ -4,10 +4,14 @@
         <div class="nav-trigger"></div>
         <header class="header">
           <div class="header__inner appear up">
+          <%= link_to root_path, class: "none", style: "text-decoration: none;" do%>
             <div class="logo item">
+  
               <span class="logo__stay">RE</span>
+
               <span class="logo__world">ISE</span>
             </div>
+            <% end %>
             <nav class="header__nav">
               <ul class="header__ul">
                 <% if user_signed_in? %>
@@ -15,11 +19,11 @@
                 <%= link_to user_path(current_user), class: "header__li item" do%>
                 <%= @user.nickname%>
                 <% end %>
-                <%= link_to "投稿", new_post_path, class: "header__li item" %>
-                <%= link_to "ログアウト", destroy_user_session_path, method: :delete , class: "header__li item"%>
+                <%= link_to "Post", new_post_path, class: "header__li item" %>
+                <%= link_to "LogOut", destroy_user_session_path, method: :delete , class: "header__li item"%>
                   <% else %>
-                <%= link_to "ログイン", new_user_session_path, class: 'header__li item' %>
-                <%= link_to "新規登録", new_user_registration_path, class: 'header__li item' %>
+                <%= link_to "LogIn", new_user_session_path, class: 'header__li item' %>
+                <%= link_to "SignIn", new_user_registration_path, class: 'header__li item' %>
 
         <% end %>
 
