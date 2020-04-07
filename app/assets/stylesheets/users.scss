@@ -1,5 +1,10 @@
 .all{
   background-color: #f8f8f8;
+  .h_main{
+    display: flex;
+    margin: 40px auto 0;
+    width: 1020px;
+  }
   .h_head{
     border-top: 1px solid #eee;
     height: 50px;
@@ -89,5 +94,6 @@
           color: black;
         }
       }
+
   }
 }
