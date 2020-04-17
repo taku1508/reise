@@ -251,7 +251,7 @@ DEPENDENCIES
   chromedriver-helper
   coffee-rails (~> 4.2)
   devise
-  fog-aws (= 2.0.0)
+  fog-aws
   font-awesome-sass
   jbuilder (~> 2.5)
   jquery-rails
