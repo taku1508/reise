@@ -67,5 +67,3 @@ gem 'font-awesome-sass'
 gem 'pry-rails'
 gem 'fog-aws', group: :production
 gem 'carrierwave', '~> 1.0'
-
-
