@@ -65,5 +65,5 @@ gem 'devise'
 gem 'font-awesome-sass'
 gem 'pry-rails'
 gem 'carrierwave',             '1.0'
-gem 'mini_magick',             '4.7.0'
+gem 'mini_magick',             '4.9.4'
 gem 'fog-aws', group: :production
