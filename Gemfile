@@ -64,6 +64,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise'
 gem 'font-awesome-sass'
 gem 'pry-rails'
-gem 'carrierwave',             '1.0'
+gem 'carrierwave',             '1.3.2'
 gem 'mini_magick',             '4.7.0'
 gem 'fog-aws', group: :production
